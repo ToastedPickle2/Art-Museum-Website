@@ -484,7 +484,7 @@ html::-webkit-scrollbar {
 }
 
 @media (max-width: 450px) {
-    .background-image {
+     .background-image {
         height: 95rem;
         background-position: 50% -6.5rem;
     }
@@ -495,19 +495,16 @@ html::-webkit-scrollbar {
     }
 
     .images {
-        width: 50rem;
-        max-width: 80%;
-
-        width: 20rem; 
+        width: 29.4rem; 
         max-width: 100%;
-        min-height: 25rem;
+        min-height: 22.8rem;
     }
 
     .container {
         background: none;
     }
-    
-        .artist-names {
+
+    .artist-names {
         font-size: 1.7rem;
     }
     

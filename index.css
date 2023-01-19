@@ -507,6 +507,10 @@ html::-webkit-scrollbar {
         max-width: 100%;
         min-height: 22.8rem;
     }
+    
+    .container div:last-child {
+        margin-bottom: 5rem;
+    }
 
     .container {
         background: none;

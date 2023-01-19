@@ -506,4 +506,22 @@ html::-webkit-scrollbar {
     .container {
         background: none;
     }
+    
+        .artist-names {
+        font-size: 1.7rem;
+    }
+    
+    .artwork-name {
+        font-size: 1.7rem;
+    }
+    
+    .artwork-materials {
+        font-size: 1.5rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .artwork-description {
+        font-size: 1.4rem;
+    }
 }

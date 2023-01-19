@@ -285,19 +285,11 @@ html::-webkit-scrollbar {
     position: relative;
 }
 
-.images:hover .images-opacity-filter {
+.images:hover, .images:focus, .images:active .images-opacity-filter {
     opacity: 0%;
 }
 
-.images:hover .images-text-wrapper {
-    visibility: hidden;
-}
-
-.images:active .images-opacity-filter {
-    opacity: 0%;
-}
-
-.images:active .images-text-wrapper {
+.images:hover, .images:focus, .images:active .images-text-wrapper {
     visibility: hidden;
 }
 

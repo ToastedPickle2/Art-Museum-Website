@@ -293,6 +293,14 @@ html::-webkit-scrollbar {
     visibility: hidden;
 }
 
+.images:active .images-opacity-filter {
+    opacity: 0%;
+}
+
+.images:active .images-text-wrapper {
+    visibility: hidden;
+}
+
 .artist-info-card {
     padding-top: 2rem;
     padding-left: 2rem;

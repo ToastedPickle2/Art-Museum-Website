@@ -298,7 +298,7 @@ body {
 @media (max-width: 450px) {
     .background-image {
         height: 95rem;
-        background-position: 50% -6rem;
+        background-position: 50% -6.5rem;
     }
 
     .box {
@@ -314,5 +314,9 @@ body {
         max-width: 100%;
         max-height: 25rem;
         min-height: 25rem;
+    }
+    
+      .container {
+        background: none;
     }
 }

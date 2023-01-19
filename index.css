@@ -139,7 +139,7 @@ body {
 }
 
 .background-image {
-    background: url(background-2.jpg) center no-repeat;
+    background: url(ArtImages/background-2.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 62.5%;
 
@@ -164,7 +164,7 @@ body {
     scroll-snap-type: y mandatory;   
     gap: 7rem;
 
-    background: url(texture-2.jpg) center no-repeat;
+    background: url(ArtImages/texture-2.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -179,7 +179,7 @@ body {
     position: sticky;
     top: 2rem;
     z-index: 0;
-    background: url(frame3.jpg) center no-repeat;
+    background: url(ArtImages/frame3.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     border: 10px ridge #fff;
@@ -198,61 +198,61 @@ body {
 }
 
 .image-1 {
-    background: url(art1.jpg) center no-repeat;
+    background: url(ArtImages/art1.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-2 {
-    background: url(art2.jpg) center no-repeat;
+    background: url(ArtImages/art2.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-3 {
-    background: url(art3.jpg) center no-repeat;
+    background: url(ArtImages/art3.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-4 {
-    background: url(art4.jpg) center no-repeat;
+    background: url(ArtImages/art4.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-5 {
-    background: url(art5.jpg) center no-repeat;
+    background: url(ArtImages/art5.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-6 {
-    background: url(art6.jpg) center no-repeat;
+    background: url(ArtImages/art6.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }   
 
 .image-7 {
-    background: url(art7.jpg) center no-repeat;
+    background: url(ArtImages/art7.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-8 {
-    background: url(art8.jpg) center no-repeat;
+    background: url(ArtImages/art8.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-9 {
-    background: url(art9.jpg) center no-repeat;
+    background: url(ArtImages/art9.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 .image-10 {
-    background: url(art10.jpg) center no-repeat;
+    background: url(ArtImages/art10.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }

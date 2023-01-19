@@ -133,9 +133,69 @@ html::-webkit-scrollbar {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.fs-primary {
+    font-size: 4rem;
+}
+
+.top-padding {
+    padding-top: var(--size-500);
+}
+
 /* End of Utility Classes */
-body {
-    background: beige;
+.nav-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    max-width: 100%;
+    min-height: 7rem;
+    z-index: 1000;
+}
+
+.nav-header {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.nav-links-wrapper {
+    display: flex;
+    align-items: center;
+    flex-basis: 25%;
+    background-color: #5e503f;
+    justify-content: space-evenly;
+    border-radius: 4px;
+}
+
+.nav-links {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fff;
+    /* border-right: 1px solid #fff;
+    padding: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem; */
+    transition: all .2s;
+}
+
+.ya {
+    width: 25%;
+    max-width: 100%;
+    border-right: 1px solid #fff;
+    text-align: center;
+}
+
+.nav-links:hover {
+    opacity: 70%;
+}
+
+.nav-logo-wrapper {
+    flex-basis: 25%;
+}
+
+.nav-logo {
+    width: 7rem;
+    padding-left: 2rem;
 }
 
 .background-image {
@@ -153,7 +213,6 @@ body {
 .container {
     width: 100%;
     max-width: 90%;
-    height: 31rem;
     height: 35rem;
     position: relative;
     margin-block-end: 14rem;
@@ -167,11 +226,11 @@ body {
     background: url(ArtImages/texture-2.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    cursor: ns-resize;
 }
 
 
-.box {
-    /*border: 2px solid #000; test*/
+.images-frame {
     width: 46rem;
     width: 37%;/*ya*/
     max-width: 100%;
@@ -190,17 +249,83 @@ body {
 .images {
     width: 35%; 
     max-width: 100%;
-    max-height: 25rem;
     min-height: 29rem;
     scroll-snap-align: center; 
     box-sizing: border-box;
     z-index: 1;
+    position: relative;
+    cursor: auto;
+
 }
 
 .image-1 {
     background: url(ArtImages/art1.jpg) center no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.images-opacity-filter {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #434343;
+    position: absolute;
+    z-index: 1;
+    opacity: 65%;
+    transition: all .4s;
+
+}
+
+.images-text-wrapper {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+}
+
+.images:hover .images-opacity-filter {
+    opacity: 0%;
+}
+
+.images:hover .images-text-wrapper {
+    visibility: hidden;
+}
+
+.artist-info-card {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+.artist-names {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.artist-birth {
+    font-weight: 400;
+}
+
+.artwork-name {
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.artwork-year {
+    font-weight: 400;
+}
+
+.artwork-materials {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.artwork-description {
+    font-size: 1.4rem;
 }
 
 .image-2 {
@@ -262,18 +387,13 @@ body {
     background-color: green;
     width: 100%;
     height: 90rem;
-    margin-block-start: 30rem;
+    margin-block-start: 5rem;
 }
 
 .container div:last-child {
     margin-bottom: 3rem;
 }
 
-@media (min-width: 1740px) {
-    .background-image {
-        background-position: 50% 58.5%;
-    }
-}
 
 @media (min-width: 1420px) {
     .container {
@@ -281,7 +401,7 @@ body {
         gap: 10.5rem;
     }
 
-    .box {
+    .images-frame {
         top: 9.5rem;
     }
 
@@ -291,8 +411,76 @@ body {
     }
 }
 
-@media (max-width: 625px) {
 
+@media (min-width: 1740px) {
+    .background-image {
+        background-position: 50% 59%;
+    }
+
+    .container {
+        height: 58rem;
+        gap: 15rem;
+    }
+
+    .images-frame {
+        top: 13.5rem;
+    }
+}
+
+@media (min-width: 2220px) {
+    .container {
+        height: 73rem;
+        gap: 22rem;
+    }
+
+    .images-frame {
+        top: 21rem;
+    }
+}
+
+
+@media (max-width: 915px) {
+    .background-image {
+        background-position: 50% 65%;
+    }
+}
+
+@media (max-width: 870px) {
+    .background-image {
+        background-position: 50% 70%;
+    }
+}
+
+@media (max-width: 800px) {
+    .background-image {
+        background-position: 50% 78%;
+    }
+}
+
+@media (max-width: 755px) {
+    .background-image {
+        background-position: 50% -5rem;
+        height: 95rem;
+    }
+
+    .container {
+        height: 33rem;
+        margin-block-end: 5rem;
+        background: none;
+    }
+
+    .images {
+        min-width: 47%;
+        max-width: 100%;
+        min-height: 23rem;
+    }
+
+    .images-frame {
+        top: 4rem;
+        width: 50%;
+        max-width: 100%;
+        min-height: 25rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -301,7 +489,7 @@ body {
         background-position: 50% -6.5rem;
     }
 
-    .box {
+    .images-frame {
         width: 85%;
         max-width: 100%;
     }
@@ -312,11 +500,10 @@ body {
 
         width: 20rem; 
         max-width: 100%;
-        max-height: 25rem;
         min-height: 25rem;
     }
-    
-      .container {
+
+    .container {
         background: none;
     }
 }

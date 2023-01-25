@@ -260,7 +260,6 @@ html::-webkit-scrollbar {
     display: none;
     /* background-color: blue; */
     position: relative;
-    margin-right: 5rem;
 }
 
 .checkbox:checked ~ .nav-container .nav-links-container .nav-icon-check .nav-icon-closed {

@@ -12,27 +12,47 @@
 <body>
     <main>
         <nav>
+            <input type="checkbox" class="checkbox" id="click" hidden>
             <div class="nav-container">
                 <div class="nav-logo-wrapper">
                     <img src="ArtImages/logo4.jpg" alt="" class="nav-logo">
                 </div>
                 <h1 class="nav-header fs-primary">Our Collection</h1>
-                <div class="nav-links-wrapper">
-                    <div class="ya">
+                <div class="nav-links-container">
+                    <div class="nav-links-wrapper">
                         <p><a href="#" class="nav-links">About</a></p>
                     </div>
 
-                    <div class="ya">
+                    <div class="nav-links-wrapper">
                         <p><a href="#" class="nav-links">Gallery</a></p>
                     </div>
 
-                    <div class="ya">
+                    <div class="nav-links-wrapper">
                         <p><a href="#" class="nav-links">Services</a></p>
                     </div>
 
-                    <div class="ya"> 
+                    <div class="nav-links-wrapper"> 
                         <p><a href="#" class="nav-links">Blog</a></p>
                     </div>
+
+                    <label for="click" class="nav-icon-check">
+                        <i class="fa-solid fa-ellipsis-vertical nav-icon nav-icon-closed"></i>
+                        <i class="fa-regular fa-ellipsis-stroke-vertical nav-icon nav-icon-open"></i>
+                    </label>                    
+                </div>
+            </div>
+            <div class="dropdown-nav-container">
+                <div class="dropdown-nav-links-wrapper">
+                    <p><a href="#" class="dropdown-nav-links ">About</a></p>
+                </div>
+                <div class="dropdown-nav-links-wrapper">
+                    <p><a href="#" class="dropdown-nav-links">Gallery</a></p>
+                </div>
+                <div class="dropdown-nav-links-wrapper">
+                    <p><a href="#" class="dropdown-nav-links">Services</a></p>
+                </div>
+                <div class="dropdown-nav-links-wrapper">
+                    <p><a href="#" class="dropdown-nav-links">Blog</a></p>
                 </div>
             </div>
         </nav>

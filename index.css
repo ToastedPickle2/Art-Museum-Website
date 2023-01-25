@@ -134,7 +134,7 @@ html::-webkit-scrollbar {
 }
 
 .fs-primary {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .top-padding {
@@ -151,38 +151,51 @@ html::-webkit-scrollbar {
     max-width: 100%;
     min-height: 7rem;
     z-index: 1000;
+    border-bottom: 5px solid #22333b;
+}
+
+.nav-icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.nav-icon-open {
+    display: none;
 }
 
 .nav-header {
-    flex-basis: 50%;
+    flex-basis: 30%;
     text-align: center;
+}
+
+.nav-links-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 35%;
+    border-radius: 4px;
+    margin-right: 2rem;
+    /* margin-left: 10%; */
+    position: relative;
+    /* max-width: 30rem; */
 }
 
 .nav-links-wrapper {
-    display: flex;
-    align-items: center;
-    flex-basis: 25%;
+    max-width: 100%;
+    min-width: 7rem; 
+    border-right: 5px solid #fff;
+    text-align: center;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
     background-color: #5e503f;
-    justify-content: space-evenly;
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .nav-links {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #fff;
-    /* border-right: 1px solid #fff;
-    padding: 1.5rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem; */
     transition: all .2s;
-}
-
-.ya {
-    width: 25%;
-    max-width: 100%;
-    border-right: 1px solid #fff;
-    text-align: center;
 }
 
 .nav-links:hover {
@@ -190,12 +203,72 @@ html::-webkit-scrollbar {
 }
 
 .nav-logo-wrapper {
-    flex-basis: 25%;
+    flex-basis: 35%;
 }
 
 .nav-logo {
-    width: 7rem;
+    width: 5rem;
     padding-left: 2rem;
+}
+
+.dropdown-nav-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #fff;
+    min-width: 14rem; 
+    min-height: 16rem;    
+    z-index: 1000;
+    right: 0rem;
+    top: 7.5rem;
+    margin-right: -20rem;
+    box-shadow: -20px 28px 28px 1px rgba(67,67,67,0.36);
+    background-color: #fff;
+}
+
+.dropdown-nav-links-wrapper {
+    border-top: 1px solid #fff; 
+    width: 90%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5e503f;
+}
+
+.dropdown-nav-links-wrapper:hover {
+    background-color: #fff;
+    border-right: 15px solid #aaa;
+}
+
+.dropdown-nav-links-wrapper:hover .dropdown-nav-links {
+    color: #5e503f;
+}
+
+.dropdown-nav-links {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-icon-check {
+    min-width: 10rem;
+    min-width: 4rem;
+    max-width: 100%;
+    text-align: center;
+    display: none;
+    /* background-color: blue; */
+    position: relative;
+    margin-right: 5rem;
+}
+
+.checkbox:checked ~ .nav-container .nav-links-container .nav-icon-check .nav-icon-closed {
+    display: none;
+}
+
+.checkbox:checked ~ .nav-container .nav-links-container .nav-icon-check .nav-icon-open {
+    display: inline-block;
 }
 
 .background-image {
@@ -228,6 +301,26 @@ html::-webkit-scrollbar {
     background-position: 50% 50%;
     cursor: ns-resize;
 }
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    /* border-radius: 10em; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: url(ArtImages/art7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background-image: linear-gradient(to top, #00dbde 0%, #fc00ff 100%); */
+    border-radius: 3em;
+
+}
+
 
 
 .images-frame {
@@ -292,6 +385,7 @@ html::-webkit-scrollbar {
 .images:hover .images-text-wrapper {
     visibility: hidden;
 }
+
 
 .artist-info-card {
     padding-top: 2rem;
@@ -407,7 +501,10 @@ html::-webkit-scrollbar {
 
     .images {
         width: 36%; 
+    }
 
+    .container div:last-child {
+        margin-bottom: 11.5rem;
     }
 }
 
@@ -424,6 +521,10 @@ html::-webkit-scrollbar {
 
     .images-frame {
         top: 13.5rem;
+    }
+
+    .container div:last-child {
+        margin-bottom: 15rem;
     }
 }
 
@@ -449,12 +550,56 @@ html::-webkit-scrollbar {
     .background-image {
         background-position: 50% 70%;
     }
+
+    .nav-logo-wrapper {
+        flex-basis: 25%;
+    }
+
+    .nav-header {
+        flex-basis: 50%;
+    }
+
+    .fs-primary {
+        font-size: 3.2rem;
+    }
+
+    .nav-links-container {
+        flex-basis: 25%;
+        background-color: transparent;
+    }
+
+    .nav-links-container {
+        margin-right: 0rem;
+        justify-content: flex-end;
+    }
+
+    .nav-icon-check {
+        display: block;
+    }
+
+    .nav-links-wrapper {
+        display: none;
+    }
+
+    .checkbox:checked ~ .dropdown-nav-container {
+        margin-right: 0rem;
+        transition: all .4s;
+    }
+
+    .checkbox:checked ~ .dropdown-nav-container {
+        box-shadow: -377px 372px 1px 370px rgba(67,67,67,0.54);
+        box-shadow: -351px 367px 1px 370px rgba(67,67,67,0.54);
+    }
 }
 
 @media (max-width: 800px) {
     .background-image {
         background-position: 50% 78%;
     }
+
+    .artist-info-card {
+        padding-top: 1rem;
+        padding-left: 1rem;
 }
 
 @media (max-width: 755px) {
@@ -470,21 +615,25 @@ html::-webkit-scrollbar {
     }
 
     .images {
-        min-width: 47%;
+        min-width: 56%;
         max-width: 100%;
         min-height: 23rem;
     }
 
     .images-frame {
         top: 4rem;
-        width: 50%;
+        width: 60%;
         max-width: 100%;
         min-height: 25rem;
+    }
+
+    .container div:last-child {
+        margin-bottom: 5rem;
     }
 }
 
 @media (max-width: 450px) {
-     .background-image {
+    .background-image {
         height: 95rem;
         background-position: 50% -6.5rem;
     }
@@ -499,13 +648,14 @@ html::-webkit-scrollbar {
         max-width: 100%;
         min-height: 22.8rem;
     }
-    
+
     .container div:last-child {
         margin-bottom: 5rem;
     }
 
     .container {
         background: none;
+        margin-block-end: 14rem;
     }
 
     .artist-names {
